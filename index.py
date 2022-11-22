@@ -72,9 +72,9 @@ def search():
     else:  
         return render_template("input.html")
 
-@app.route("/query", action=["#"], methods=["POST","GET"])
+@app.route("/query")
 def query():
-    return render_template("query#.html")
+    return render_template("query.html")
 
 #if __name__ == "__main__":
 #    app.run()
