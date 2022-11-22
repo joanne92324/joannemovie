@@ -16,6 +16,7 @@ app = Flask(__name__)
 def index():
     homepage = "<h1>蕭莉瓊Firestore資料庫存取</h1>"
     homepage += "<br><a href=/movie>讀取開眼電影即將上映影片，寫入Firestore</a><br>"
+    homepage += "<br><a href=/query>電影查詢</a><br>"
     return homepage
 
 @app.route("/movie")
@@ -71,5 +72,9 @@ def search():
     else:  
         return render_template("input.html")
 
-if __name__ == "__main__":
-    app.run()
+@app.route("/query")
+def query():
+    return render_template("query.html")
+
+#if __name__ == "__main__":
+#    app.run()
