@@ -74,7 +74,7 @@ def search():
 
 @app.route("/query")
 def query():
-    return render_template("query.html")
+    return info
 else:
     return render_template("query#.html")
 
