@@ -70,7 +70,7 @@ def search():
                 info += "上映日期：" + doc.to_dict()["showDate"] + "<br><br>"           
         return info
     else:  
-        return render_template("query.html")
+        return render_template("input.html")
 
 @app.route("/query")
 def query():
