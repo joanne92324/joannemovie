@@ -74,7 +74,7 @@ def search():
 
 @app.route("/query")
 def query():
-    return render_template("query.html")
+    return render_template("query#.html")
 
 #if __name__ == "__main__":
 #    app.run()
